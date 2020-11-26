@@ -21,56 +21,38 @@
 
 # 主な機能
 
-各条件での検索機能
-
-新規ユーザー登録機能
-
-ログイン・ログアウト機能
-
-コメント投稿機能
-
-コメント編集機能
-
-Ajaxによるいいね機能
-
-ユーザーページ表示
-
-プロフィール編集機能
-
-パスワード変更機能
-
-パスワードリマインダー(メール送信)
-
-パスワードリセット(メール送信)
-
-退会
+- 各条件での検索機能
+- 新規ユーザー登録機能
+- ログイン・ログアウト機能
+- コメント投稿機能
+- コメント編集機能
+- Ajaxによるいいね機能
+- ユーザーページ表示
+- プロフィール編集機能
+- パスワード変更機能
+- パスワードリマインダー(メール送信)
+- パスワードリセット(メール送信)
+- 退会(アカウント削除)機能
 
 
 # 開発環境
 ## 使用言語・データベース・ライブラリ
 
-PHP Version 7.4.1
-
-HTML5
-
-CSS3
-
-javascript
-
-jQuery
-
-MySQL
+- PHP Version 7.4.1
+- HTML5
+- CSS3
+- javascript
+- jQuery
+- MySQL
 
 
-## 使用ツール・ライブラリ
+## 使用ツールなど
 
-VSCode (Visual Studio Code)
-
-MAMP
-
-Google Fonts
-
-Font Awesome
+- VSCode (Visual Studio Code)
+- MAMP
+- FileZilla
+- Google Fonts
+- Font Awesome
 
 ## 書いた人
 

@@ -116,7 +116,7 @@ require('head.php');
         </div>
         <label class="<?php if (!empty($err_msg['pass_re'])) echo 'err'; ?>">
           パスワード(再入力)
-          <input type="text" name="pass_re" value="<?php if (!empty($_POST['pass_re'])) echo $_POST['pass_re'] ?>">
+          <input type="password" name="pass_re" value="<?php if (!empty($_POST['pass_re'])) echo $_POST['pass_re'] ?>">
         </label>
         <div class="area_msg">
           <?php

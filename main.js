@@ -100,21 +100,18 @@ $(function () {
   //==============================
   // フッターの位置を画面最下部にする
   //==============================
-  window.onload = function () {
-    // ページが全て読み込み終わってから以下の処理をする
-    let $ftr = $("#footer");
-    // footerのDOMを取得
-    if (window.innerHeight > $ftr.offset().top + $ftr.outerHeight()) {
-      // 画面の高さが、表示するページの高さよりも高かった場合
-      $ftr.attr({
-        style:
-          "position:fixed; top:" +
-          (window.innerHeight - $ftr.outerHeight()) +
-          "px",
-        // 「footerを画面の最下部に固定する」というスタイルを記述する
-      });
-    }
-  };
+  let $ftr = $("#footer");
+  // footerのDOMを取得
+  if (window.innerHeight > $ftr.offset().top + $ftr.outerHeight()) {
+    // 画面の高さが、表示するページの高さよりも高かった場合
+    $ftr.attr({
+      style:
+        "position:fixed; top:" +
+        (window.innerHeight - $ftr.outerHeight()) +
+        "px",
+      // 「footerを画面の最下部に固定する」というスタイルを記述する
+    });
+  }
 
   //==============================
   // メッセージ表示(getSessionFlash)

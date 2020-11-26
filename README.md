@@ -2,8 +2,7 @@
 
 「どうぶつの森 カード検索(仮)」はamiiboカードが見られるサービスです。
 
-ページへのリンクは(こちら)[https://tanakatarou6.com/acnh/]
-
+ページへのリンクは[こちら](https://tanakatarou6.com/acnh/)
 
 # 説明
 
@@ -75,4 +74,4 @@ Font Awesome
 
 ## 書いた人
 
-(なーちゃん)[https://twitter.com/tanakatarou590]
+[なーちゃん](https://twitter.com/tanakatarou590)

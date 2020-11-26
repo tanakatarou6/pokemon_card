@@ -8,6 +8,7 @@
           <?php
           if (empty($_SESSION['user_id'])) {
           ?>
+            <li><a href="guestlogin.php">ゲストログイン</a></li>
             <li><a href="login.php">ログイン</a></li>
             <li class="btn"><a href="signup.php">新規登録</a></li>
           <?php

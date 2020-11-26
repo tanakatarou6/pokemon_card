@@ -98,13 +98,10 @@ if (!empty($_POST)) {
 
       // クエリ成功の場合
       if ($stmt) {
-
         if (empty($edit_flg)) {
           $_SESSION['msg_success'] = SUC04;
-          return;
         } else {
           $_SESSION['msg_success'] = SUC02;
-          return;
         }
         debug('マイページへ遷移します');
         header("Location:mypage.php"); //マイページへ

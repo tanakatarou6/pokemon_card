@@ -18,7 +18,6 @@ require('auth.php');
 //==============================
 // ユーザーIDを取得
 $u_id = (!empty($_SESSION['user_id'])) ? $_SESSION['user_id'] : '';
-// debug('$u_idのなかみ：' . print_r($u_id, true)); //OK
 
 // 現在のページのGETパラメータを取得
 $currentPageNum = (!empty($_GET['p'])) ? $_GET['p'] : 1;  //デフォルトは1ページ目

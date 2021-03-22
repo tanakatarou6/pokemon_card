@@ -1,0 +1,367 @@
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：セッションID:7emg4theprkcp372d1amsd9i8f
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1612853552
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：完成したSQL文：SELECT card_no FROM cards LIMIT 20 OFFSET 0
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[09-Feb-2021 15:52:32 Asia/Tokyo] デバッグ：現在のページ：1
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 107
+[09-Feb-2021 15:52:32 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/ws_op/index.php on line 110
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：セッションID:h9gje796jvqjj06mrg5v1lf70n
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1612853557
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+    [s_id] => 6
+    [t_id] => 0
+    [b_id] => 0
+    [p_id] => 0
+)
+
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[09-Feb-2021 15:52:37 Asia/Tokyo] エラー発生：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND booster = 6' at line 1
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[09-Feb-2021 15:52:37 Asia/Tokyo] デバッグ：現在のページ：1
+[09-Feb-2021 15:52:37 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/ws_op/index.php on line 88
+[09-Feb-2021 15:52:37 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/ws_op/index.php on line 93
+[09-Feb-2021 15:52:37 Asia/Tokyo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Applications/MAMP/htdocs/ws_op/index.php on line 93
+[09-Feb-2021 15:52:37 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/ws_op/index.php on line 95
+[09-Feb-2021 15:52:37 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/ws_op/index.php on line 102
+[09-Feb-2021 15:52:37 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/ws_op/index.php on line 102
+[09-Feb-2021 15:52:37 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/ws_op/index.php on line 131
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：セッションID:tcvfpiles9v2dm6au0oh03eq7q
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1612853663
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：現在のページ：1
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：セッションID:2tkkg4mgh7v3v69osu2ppi14aa
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1612853663
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[09-Feb-2021 15:54:23 Asia/Tokyo] デバッグ：現在のページ：1
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：セッションID:d5v3q9eojbu3dkljkqrk6pt577
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1612853664
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[09-Feb-2021 15:54:24 Asia/Tokyo] デバッグ：現在のページ：1
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：セッションID:hc0vqc6bfu2k18fcdm8tgdfbtd
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1612853668
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+    [s_id] => 2
+    [t_id] => 0
+    [b_id] => 0
+    [p_id] => 0
+)
+
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 AND booster = 2 LIMIT 20 OFFSET 0
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[09-Feb-2021 15:54:28 Asia/Tokyo] デバッグ：現在のページ：1
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：セッションID:j7rvoj38crqsp0bb62rqd9m680
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1612853671
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+    [s_id] => 2
+    [t_id] => 6
+    [b_id] => 0
+    [p_id] => 0
+)
+
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 AND booster = 2 AND type = 6 LIMIT 20 OFFSET 0
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[09-Feb-2021 15:54:31 Asia/Tokyo] デバッグ：現在のページ：1
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：セッションID:sj3l5coj4njem94e8qb99gr33a
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1613394608
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[15-Feb-2021 22:10:08 Asia/Tokyo] デバッグ：現在のページ：1
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：セッションID:q42uh4djpdihqc9lkhu0dtbosf
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1613394655
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[15-Feb-2021 22:10:55 Asia/Tokyo] デバッグ：現在のページ：1
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：セッションID:834h776ngn32srmgcmoabsim8r
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1613394829
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[15-Feb-2021 22:13:49 Asia/Tokyo] デバッグ：現在のページ：1
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：セッションID:6sr2r44qn2vosg6dj8braohipg
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1613394856
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：現在のページ：1

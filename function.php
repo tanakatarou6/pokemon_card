@@ -302,45 +302,58 @@ function getCardList($currentMinNum = 1, $booster, $type, $birth_m, $personal, $
         // debug('$rst[totla_page]のなかみ：' . print_r($rst['total_page']), true);
 
         // ページング用のSQL文作成
-        $sql = 'SELECT * FROM cards';
+        $sql = 'SELECT * FROM cards WHERE 1';
         if (!empty($booster)) {
-            $sql .= ' WHERE booster = ' . $booster; // 1
-            if (!empty($type)) {
-                $sql .= ' AND type = ' . $type;  // 12
-                if (!empty($birth_m)) {
-                    $sql .= ' AND birth_m = ' . $birth_m; // 123
-                    if (!empty($personal)) {
-                        $sql .= ' AND personal = ' . $personal;  // 1234
-                    }
-                } elseif (!empty($personal)) {
-                    $sql .= ' AND personal = ' . $personal;  // 12 4
-                }
-            } elseif (!empty($birth_m)) {
-                $sql .= ' AND birth_m = ' . $birth_m; // 1 3
-                if (!empty($personal)) {
-                    $sql .= ' AND personal = ' . $personal; // 1 34
-                }
-            } elseif (!empty($personal)) {
-                $sql .= ' AND personal = ' . $personal; // 1  4
-            }
-        } elseif (!empty($type)) {
-            $sql .= ' WHERE type = ' . $type; // 2
-            if (!empty($birth_m)) {
-                $sql .= ' AND birth_m = ' . $birth_m; // 23
-                if (!empty($personal)) {
-                    $sql .= ' AND personal = ' . $personal;  // 234
-                }
-            } elseif (!empty($personal)) {
-                $sql .= ' AND personal = ' . $personal;  // 2 4
-            }
-        } elseif (!empty($birth_m)) {
-            $sql .= ' WHERE birth_m = ' . $birth_m;  // 3
-            if (!empty($personal)) {
-                $sql .= ' AND personal = ' . $personal;  // 34
-            }
-        } elseif (!empty($personal)) {
-            $sql .= ' WHERE personal = ' . $personal;  // 4
+            $sql .= ' AND booster = ' . $booster;
         }
+        if (!empty($type)) {
+            $sql .= ' AND type = ' . $type;
+        }
+        if (!empty($birth_m)) {
+            $sql .= ' AND birth_m = ' . $birth_m;
+        }
+        if (!empty($personal)) {
+            $sql .= ' AND personal = ' . $personal;
+        }
+        // $sql = 'SELECT * FROM cards';
+        // if (!empty($booster)) {
+        //     $sql .= ' WHERE booster = ' . $booster; // 1
+        //     if (!empty($type)) {
+        //         $sql .= ' AND type = ' . $type;  // 12
+        //         if (!empty($birth_m)) {
+        //             $sql .= ' AND birth_m = ' . $birth_m; // 123
+        //             if (!empty($personal)) {
+        //                 $sql .= ' AND personal = ' . $personal;  // 1234
+        //             }
+        //         } elseif (!empty($personal)) {
+        //             $sql .= ' AND personal = ' . $personal;  // 12 4
+        //         }
+        //     } elseif (!empty($birth_m)) {
+        //         $sql .= ' AND birth_m = ' . $birth_m; // 1 3
+        //         if (!empty($personal)) {
+        //             $sql .= ' AND personal = ' . $personal; // 1 34
+        //         }
+        //     } elseif (!empty($personal)) {
+        //         $sql .= ' AND personal = ' . $personal; // 1  4
+        //     }
+        // } elseif (!empty($type)) {
+        //     $sql .= ' WHERE type = ' . $type; // 2
+        //     if (!empty($birth_m)) {
+        //         $sql .= ' AND birth_m = ' . $birth_m; // 23
+        //         if (!empty($personal)) {
+        //             $sql .= ' AND personal = ' . $personal;  // 234
+        //         }
+        //     } elseif (!empty($personal)) {
+        //         $sql .= ' AND personal = ' . $personal;  // 2 4
+        //     }
+        // } elseif (!empty($birth_m)) {
+        //     $sql .= ' WHERE birth_m = ' . $birth_m;  // 3
+        //     if (!empty($personal)) {
+        //         $sql .= ' AND personal = ' . $personal;  // 34
+        //     }
+        // } elseif (!empty($personal)) {
+        //     $sql .= ' WHERE personal = ' . $personal;  // 4
+        // }
 
         $data = array();
         // クエリ実行

@@ -83,6 +83,10 @@ require('head.php');
       ?>
       <!--------一覧表示部分-------->
       <div class="main">
+        <form action="#" method="get">
+          <input type="text">
+          <input type="submit" value="検索">
+        </form>
         <div class="search_title">
           <div class="search_left">
             <span class="total_num"><?php echo sanitize($dbCardData['total']); ?></span>点のアイテムが見つかりました。

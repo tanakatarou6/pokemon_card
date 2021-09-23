@@ -1,7 +1,7 @@
   <header>
     <div class="container">
       <div class="header_left">
-        <h1><a href="index.php">どうぶつの森 カード検索(仮)</a></h1>
+        <h1><a href="index.php">ポケモンカードゲーム カード検索(仮)</a></h1>
       </div>
       <div class="header_right">
         <ul>

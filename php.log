@@ -365,3 +365,311 @@
 [15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
 [15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
 [15-Feb-2021 22:14:16 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：セッションID:ppt4pih35qtjc964l43s6ktr5q
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627223916
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:38:36 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：セッションID:is1peu3vlkbnn2itijr3kabor6
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627223933
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:38:53 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：セッションID:m5e1s2gvche175652jkuhfrnte
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627224227
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:43:47 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：セッションID:tbolp8i5gb33fl73g4f4uvoafb
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627224252
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:44:12 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：セッションID:2lrpcr8ts60vmh250mhu6s1cbn
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627224372
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:46:12 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：セッションID:dbe7a3425amomnau0mvjv9hooa
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627224569
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:49:29 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：セッションID:joqh3qb6q92573q1hp0pj6odpd
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627224622
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:50:22 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：セッションID:ci5se41q5trmi23plda1c9o1cs
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627224685
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:51:25 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：セッションID:isa73pfcoa78h7ovfv5fldcjbd
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627225000
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:56:40 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：セッションID:m2stm1j15rtirrblgkegv70kj8
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627225135
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:58:55 Asia/Tokyo] デバッグ：現在のページ：1
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：「　トップページ　「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：<<<<<<<<<<<画面表示処理開始>>>>>>>>>>
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：セッションID:o7pikatgpm0qvcautm17st0i47
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1627225159
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：$_SESSIONのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：$_GETのなかみ：Array
+(
+)
+
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：$currentPageNumのなかみ：1
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：$currentMinNumのなかみ：0
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：カード情報を取得します(getCardList)
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：完成したSQL文：SELECT * FROM cards WHERE 1 LIMIT 20 OFFSET 0
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：ブースター情報を取得します(getBooster)
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：種族情報を取得します(getTypes)
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：性格情報を取得します(getPersonal)
+[25-Jul-2021 23:59:19 Asia/Tokyo] デバッグ：現在のページ：1

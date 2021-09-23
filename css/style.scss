@@ -1,0 +1,1533 @@
+// ==============================
+// 変数
+// ==============================
+$site-width: 1280px;
+
+// $font-family_default: "Amatic SC", cursive;
+$font-family_default: "Lobster", sans-serif;
+
+// ]]]] color [[[[
+$font_color_default: #666;
+$font_color_date: #e37b89; //TODO: リファクタ必要(色の選定)
+$font_color_sub1: #b6a489; //TODO: リファクタ必要(色の選定)
+$border_color_default: #ccc;
+$bg_color_default: #f0f0f0;
+
+// ]]]] font-size [[[[
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 18px;
+$font-size_xl: 24px;
+$font-size_2l: 30px;
+$font-size_3l: 38px;
+
+// ]]]] space [[[[
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_2l: 30px;
+$space_3l: 40px;
+
+// メディアクエリのブレークポイント設定
+$breakpoints: (
+  "sm": "screen and (max-width: 414px)",
+  // sm：スマートフォン画面サイズ用
+  "md": "screen and (max-width: 768px)",
+  // md：タブレット画面サイズ用
+  "lg": "screen and (max-width: 1000px)",
+  // lg：(小さめの)PCの画面サイズ向け
+  "xl": "screen and (max-width: 1200px)",
+  // xl：一般的なPCの画面サイズ向け(上限なし)
+) !default;
+
+// ==============================
+// mixin
+// ==============================
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints,$breakpoint)} {
+    @content;
+  }
+}
+
+// ==============================
+// mt.mbなど
+// ==============================
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+
+// ==============================
+// pc.sp
+// ==============================
+.pcOnly {
+  @include mq() {
+    display: none;
+  }
+}
+
+.spOnly {
+  display: none;
+
+  @include mq() {
+    display: block;
+  }
+}
+
+// ==============================
+// base
+// ==============================
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  font-family: "Kosugi Maru", "メイリオ", "Meiryo", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-size: 16px; // デフォルト値
+
+  @include mq() {
+    font-size: 12px;
+  }
+
+  &.is_fixed {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $site-width;
+  margin: 0 auto;
+
+  @include mq() {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #33f;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #999;
+  font-size: 1.3em;
+  padding: $space_s $space_m;
+  margin: 0 auto $space_s;
+  line-height: 1.5;
+}
+
+h3 {
+  height: 40px;
+  line-height: 40px;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #999;
+  border-left: 10px solid #999;
+  font-size: 1.2em;
+  padding: 0 $space_m;
+  margin: 0 0 5px 5px;
+}
+
+// ok
+.c-btn {
+  width: 100px;
+  height: 30px;
+  max-width: 200px;
+  background-color: $bg_color_default;
+  border: 2px solid #999;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+
+// ok
+.c-input {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid $border_color_default;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+// ok
+.p-searchArea {
+  width: 40vw;
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    & .p-btn {
+      margin-left: 5px;
+    }
+  }
+}
+
+// table共通
+.p-table {
+  width: 100%;
+  border: 1px solid $border_color_default;
+
+  &__hidden {
+    & th {
+      visibility: collapse;
+      border: 0 !important;
+      padding: 0 !important;
+      // &:nth-child(1) {
+      // // 1列目の幅指定用
+      //   width: 10%;
+      // }
+      // &:nth-child(2) {
+      // // 2番目の幅指定用
+      //   width: 5%;
+      // }
+      // &:nth-child(3) {
+      // // 3列目の幅指定用
+      //   width: 65%;
+      // }
+      // &:nth-child(4) {
+      // // 4番目の列指定用
+      //   width: 20%;
+      // }
+    }
+  }
+
+  & th,
+  & td {
+    box-sizing: border-box;
+    border: 1px solid $border_color_default;
+    color: #222;
+    font-weight: normal;
+    padding: 4px 8px;
+    line-height: 1.5;
+    @include mq() {
+      padding: 4px;
+    }
+  }
+  & th {
+    background: $bg_color_default;
+    vertical-align: middle;
+  }
+}
+
+.icn_fav {
+  color: #ccc;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.active {
+    color: #fe8a8b;
+  }
+}
+
+label.err > input {
+  background: #f7dcd9;
+}
+
+// ==============================
+// ヘッダーメニュー
+// ==============================
+.l-header {
+  width: 100%;
+  padding: $space_l 0;
+  background-color: #666;
+  z-index: 20;
+
+  @include mq() {
+    padding: $space_l $space_m;
+    position: fixed;
+    top: 0;
+  }
+}
+
+.p-header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    @include mq() {
+      display: block;
+    }
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  &__title a {
+    color: #fff;
+  }
+
+  &__menuTrigger {
+    @include mq() {
+      display: inline-block;
+    }
+    display: none;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    & span {
+      display: inline-block;
+      transition: all 0.4s;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 4px;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        top: 10px;
+      }
+      &:nth-of-type(3) {
+        bottom: 0;
+      }
+    }
+    &.active {
+      & span {
+        &:nth-of-type(1) {
+          transform: translateY(10px) rotate(-45deg);
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+        &:nth-of-type(3) {
+          transform: translateY(-12px) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    @include mq() {
+      display: block;
+      position: fixed;
+      top: 0;
+      transform: translateX(200%);
+      background: rgba(0, 0, 0, 0.7);
+      width: 50%;
+      height: 100vh;
+      padding-top: 55px;
+      margin-right: 0;
+      transition: 0.5s;
+      &.active {
+        transition: 0.5s;
+        transform: translateX(100%);
+        z-index: 2;
+      }
+    }
+  }
+
+  &__list {
+    & a {
+      line-height: 1.4;
+      border-bottom: 1px solid $bg_color_default;
+      display: block;
+      padding: $space_s;
+
+      @include mq() {
+        color: #eee;
+        font-size: 1.3em;
+        padding: $space_m;
+      }
+
+      &:hover {
+        background-color: $bg_color_default;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & .p-searchArea {
+    width: 100%;
+    margin-top: $space_l;
+  }
+
+  // ヘッダーメニューに使ってたやつ
+  // & ul {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   flex-wrap: wrap;
+  // }
+
+  // & li {
+  //   & a {
+  //     display: inline-block;
+  //     text-decoration: none;
+  //     padding: 0 20px;
+  //     font-size: 1em;
+  //     color: #fff;
+  //     cursor: pointer;
+  //     transition: all 0.5s;
+  //     transform: scale(1);
+
+  //     &:hover {
+  //       transform: scale(1.3);
+  //       text-decoration: underline;
+  //     }
+  //   }
+
+  //   &.btn {
+  //     background: #228b22;
+  //     padding: 8px 4px;
+  //   }
+  // }
+}
+
+// ==============================
+// サイドバー
+// ==============================
+.l-sidebar {
+  margin-right: 20px;
+  width: 320px;
+}
+
+.p-sidebar {
+  &__list {
+    & a {
+      line-height: 1.4;
+      border-bottom: 1px solid $bg_color_default;
+      display: block;
+      padding: $space_s;
+
+      @include mq() {
+        color: #eee;
+        font-size: 1.3em;
+        padding: $space_m;
+      }
+
+      &:hover {
+        background-color: $bg_color_default;
+        text-decoration: underline;
+      }
+    }
+    // &.active {
+    //   transition: 0.5s;
+    //   transform: translateX(-100%);
+    //   z-index: 2;
+    // }
+  }
+
+  @include mq() {
+    display: none;
+    // position: fixed;
+    // top: 0;
+    // transform: translateX(200%);
+    // background: rgba(0, 0, 0, 0.7);
+    // width: 50%;
+    // height: 100vh;
+    // padding-top: 55px;
+    // margin-right: 0;
+    // transition: 0.5s;
+    // &.active {
+    //   transition: 0.5s;
+    //   transform: translateX(100%);
+    //   z-index: 2;
+    // }
+  }
+}
+
+// ○県のアイテムが〜のところ
+// .search_title {
+//   width: 100%;
+//   height: 40px;
+//   line-height: 40px;
+//   background-color: #eee;
+//   margin-bottom: 60px;
+//   padding: 0 10px;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// ==============================
+// contents
+// ==============================
+.contents {
+  margin-top: 20px;
+
+  @include mq() {
+    margin-top: 115px;
+  }
+
+  & .flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+// ==============================
+// main
+// ==============================
+.l-main {
+  width: 100%;
+  height: 100%;
+
+  & li {
+    line-height: 2;
+  }
+}
+
+// 不要かな
+// .p-main {
+//   .p-searchArea {
+//     @include mq() {
+//       display: block;
+//       width: 95%;
+//       margin: 0 auto $space_l;
+//     }
+//   }
+// }
+
+.p-section {
+  margin-bottom: 20px;
+
+  &__inner {
+    padding: 0 $space_s;
+
+    // @include mq() {
+    //   margin-left: $space_s;
+    //   padding: 0;
+    // }
+  }
+}
+
+// ==============================
+// index
+// ==============================
+.p-index {
+  .p-news {
+    &__date {
+      &::before {
+        content: "[";
+      }
+
+      &::after {
+        content: "]";
+      }
+    }
+
+    &__title {
+      margin-left: 5px;
+    }
+  }
+
+  .p-newItem {
+    & .p-table {
+      &__hidden {
+        & th {
+          &:nth-child(1) {
+            // 1列目の幅指定用
+            width: 10%;
+          }
+          &:nth-child(2) {
+            // 2番目の幅指定用
+            width: 5%;
+          }
+          &:nth-child(3) {
+            // 3列目の幅指定用
+            width: 65%;
+          }
+          &:nth-child(4) {
+            // 4番目の列指定用
+            width: 20%;
+          }
+
+          @include mq() {
+            &:nth-child(1) {
+              // 1列目の幅指定用
+              width: 10%;
+            }
+            &:nth-child(2) {
+              // 2番目の幅指定用
+              width: 5%;
+            }
+            &:nth-child(3) {
+              // 3列目の幅指定用
+              width: 45%;
+            }
+            &:nth-child(4) {
+              // 4番目の列指定用
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==============================
+// productList
+// ==============================
+.p-productList {
+  & .p-table {
+    &__hidden {
+      & th {
+        &:nth-child(1) {
+          // 1列目の幅指定用
+          width: 7%;
+        }
+        &:nth-child(2) {
+          // 2番目の幅指定用
+          width: 7%;
+        }
+        &:nth-child(3) {
+          // 3列目の幅指定用
+          width: 61%;
+        }
+        &:nth-child(4) {
+          // 4列目の幅指定用
+          width: 15%;
+        }
+
+        @include mq() {
+          &:nth-child(1) {
+            // 1列目の幅指定用
+            width: 10%;
+          }
+          &:nth-child(2) {
+            // 2番目の幅指定用
+            width: 10%;
+          }
+          &:nth-child(3) {
+            // 3列目の幅指定用
+            width: 60%;
+          }
+          &:nth-child(4) {
+            // 4列目の幅指定用
+            width: 20%;
+          }
+        }
+      }
+    }
+
+    & td:nth-child(4) {
+      text-align: center;
+    }
+  }
+}
+
+// ==============================
+// cardList
+// ==============================
+.p-cardList {
+  & .p-table {
+    &__pcOnly {
+      @include mq() {
+        display: none;
+      }
+    }
+    &__spOnly {
+      display: none;
+      @include mq() {
+        display: inline-table;
+      }
+    }
+
+    &__hidden {
+      & th {
+        &:nth-child(1) {
+          // 1列目の幅指定用
+          width: 25%;
+        }
+        &:nth-child(2) {
+          // 2番目の幅指定用
+          width: 15%;
+        }
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          // 3〜8列目の幅指定用
+          width: 10%;
+        }
+
+        @include mq() {
+          &:nth-child(1) {
+            // 1列目の幅指定用
+            width: 23%;
+          }
+          &:nth-child(2) {
+            // 2番目の幅指定用
+            width: 23%;
+          }
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5) {
+            // 3〜5列目の幅指定用
+            width: 18%;
+          }
+        }
+      }
+    }
+
+    & td:nth-child(4) {
+      text-align: center;
+    }
+
+    &__name {
+      vertical-align: middle;
+    }
+  }
+}
+
+// ==============================
+// cardDetail
+// ==============================
+.p-cardDetail {
+  &__cardNo {
+    font-size: 0.8em;
+    margin-left: $space_m;
+  }
+
+  & .p-table {
+    &__detail {
+      @include mq() {
+        width: 100%;
+      }
+
+      & .p-table__hidden {
+        & th {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            // 1〜6列目の幅指定用
+            width: calc(50% / 3);
+          }
+
+          @include mq() {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+              // 1〜6列目の幅指定用
+              width: calc(50% / 3);
+            }
+          }
+        }
+      }
+    }
+
+    &__skill {
+      & .p-table__hidden {
+        & th {
+          &:nth-child(1) {
+            // 1列目の幅指定用
+            width: 20%;
+          }
+          &:nth-child(2) {
+            // 2列目の幅指定用
+            width: 70%;
+          }
+          &:nth-child(3) {
+            // 3列目の幅指定用
+            width: 10%;
+          }
+
+          @include mq() {
+            &:nth-child(1) {
+              // 1列目の幅指定用
+              width: 25%;
+            }
+            &:nth-child(2) {
+              // 2列目の幅指定用
+              width: 60%;
+            }
+            &:nth-child(3) {
+              // 3列目の幅指定用
+              width: 15%;
+            }
+          }
+        }
+      }
+    }
+
+    &__info {
+      & .p-table__hidden {
+        & th {
+          &:nth-child(1) {
+            // 1列目の幅指定用
+            width: 50%;
+          }
+          &:nth-child(2) {
+            // 2列目の幅指定用
+            width: 25%;
+          }
+          &:nth-child(3) {
+            // 3列目の幅指定用
+            width: 25%;
+          }
+
+          @include mq() {
+            &:nth-child(1) {
+              // 1列目の幅指定用
+              width: 50%;
+            }
+            &:nth-child(2) {
+              // 2列目の幅指定用
+              width: 25%;
+            }
+            &:nth-child(3) {
+              // 3列目の幅指定用
+              width: 25%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==============================
+// search
+// ==============================
+.p-search {
+  &__list {
+    margin-top: 10px;
+    position: relative;
+
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5px;
+
+      & li {
+        margin-left: 25px;
+        width: calc((100% / 3) - 25px);
+
+        @include mq() {
+          margin-left: 20px;
+          width: calc((100% / 2) - 20px);
+        }
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+  }
+}
+
+// ==============================
+// p-extend_box
+// ==============================
+.p-extendBox {
+  position: absolute;
+  width: 60%;
+  min-width: 550px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+  z-index: 5;
+  box-shadow: 0 0 8px gray;
+
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.3s;
+
+  @include mq() {
+    width: 100%;
+    min-width: auto;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 400px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0 5px;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @include mq() {
+      width: 100%;
+    }
+
+    &::after {
+      content: "▼";
+      position: absolute;
+      right: 0;
+      padding: 0 15px;
+      border-left: 1px solid #999;
+      background-color: #eee;
+    }
+  }
+
+  &__checkBox {
+    &:checked + .p-extendBox {
+      max-height: 250px;
+      visibility: visible;
+      transition: all 0.3s;
+    }
+  }
+
+  &__controller {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+
+    @include mq() {
+      margin: 10px 0;
+    }
+
+    & div {
+      padding: 5px 0;
+    }
+
+    & span {
+      margin: 0 10px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__selectBtn {
+    display: inline;
+    border: 2px solid #999;
+    padding: 2px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #eee;
+  }
+}
+
+// ==============================
+// 以下、過去表示の部分
+// ==============================
+
+// TOPページのパネルの設定、邪魔なので一旦無効
+// .page_index .main ul,
+// .page_mypage .main ul {
+//   display: flex;
+//   justify-content: left;
+//   flex-wrap: wrap;
+// }
+
+// .page_index .main li,
+// .page_mypage .main li {
+//   width: calc((100% / 5) - 4px);
+//   padding: 4px;
+//   border: 2px solid #aaa;
+//   border-radius: 8px;
+//   background-color: #eee;
+//   margin: 4px 2px;
+//   position: relative;
+// }
+
+.page_index .main li:hover,
+.page_mypage .main li:hover {
+  opacity: 0.8;
+}
+
+.page_index .main img,
+.page_mypage .main img {
+  max-width: 100%;
+  display: block;
+}
+
+.page_index {
+  & .card_name,
+  & .card_img {
+    align-items: center;
+  }
+
+  // & .table {
+  //   margin-left: $space_s;
+
+  //   @include mq(){
+  //     margin-left: 0;
+  //   }
+  // }
+}
+
+.page_mypage {
+  & .card_name {
+    align-items: center;
+  }
+
+  & .card_img {
+    align-items: center;
+    height: 100%;
+  }
+
+  & .panel_list {
+    min-height: 260px;
+
+    & p {
+      text-align: center;
+      line-height: 200px;
+      font-size: 1.5rem;
+    }
+  }
+
+  & .comment_list .no_comment {
+    background-color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.5rem;
+  }
+}
+
+.main {
+  & .icn_fav {
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
+  }
+
+  & li:last-child {
+    position: relative;
+  }
+
+  & .fa-angle-double-right {
+    font-size: 4rem;
+    color: #666;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.comment_list {
+  > table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 4px;
+
+    > {
+      thead th {
+        background: #ccc;
+        text-align: inherit;
+        padding: 4px;
+        border-right: 1px solid #fff;
+        text-align: center;
+      }
+
+      tbody td {
+        background: #eee;
+        text-align: inherit;
+        padding: 4px;
+        border-right: 1px solid #fff;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  & .c-day {
+    width: 130px;
+  }
+
+  & .c-char {
+    width: 120px;
+  }
+
+  & .c-pac {
+    width: 200px;
+  }
+}
+
+.page_cardDetail {
+  & .card_box {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+  }
+
+  & .card_img_box {
+    display: table-cell;
+    width: 320px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    vertical-align: top;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  .card_info_box {
+    display: table-cell;
+    border: 2px solid #ddd;
+    border-left: 0;
+    vertical-align: top;
+
+    & table {
+      width: 100%;
+    }
+
+    & tr {
+      & th {
+        width: 50%;
+        background-color: #ddd;
+        border: 1px solid #aaa;
+        text-align: center;
+        line-height: 24px;
+      }
+
+      & td {
+        border: 1px solid #aaa;
+        text-align: center;
+        line-height: 24px;
+      }
+    }
+
+    & textarea {
+      max-width: 100%;
+      height: 100px;
+    }
+
+    & input {
+      width: 160px;
+      margin: 8px;
+      float: right;
+    }
+
+    & .icons {
+      padding: 8px;
+    }
+
+    & .icn_fav {
+      position: static;
+    }
+  }
+
+  & .card_info_bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  & .no_login_msg {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  & .page_back {
+    margin: 8px 12px;
+  }
+}
+
+/*----------------------------------------
+  お気に入り一覧 ここから
+----------------------------------------*/
+
+.page_favoritList {
+  & .card_box_wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  & .card_box {
+    display: table;
+    table-layout: auto;
+    width: 50%;
+    margin-bottom: 4px;
+  }
+
+  & .card_img_box {
+    display: table-cell;
+    width: 25%;
+    padding: 2px;
+    border: 2px solid #ddd;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .card_info_box {
+    display: table-cell;
+    width: 75%;
+    border: 2px solid #ddd;
+    border-left: 0;
+    vertical-align: top;
+
+    & table {
+      width: 100%;
+      height: 100%;
+    }
+
+    & tr {
+      & th {
+        /* width: ; */
+        background-color: #ddd;
+        border: 1px solid #aaa;
+        text-align: center;
+      }
+
+      & td {
+        border: 1px solid #aaa;
+        text-align: center;
+      }
+    }
+
+    & textarea {
+      width: 100%;
+      height: 80px;
+      margin-top: 8px;
+    }
+
+    & input {
+      width: 160px;
+      margin: 8px;
+      float: right;
+    }
+
+    & .icons {
+      padding: 8px;
+    }
+
+    & .icn_fav {
+      position: static;
+    }
+  }
+
+  & .card_info_bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  & .main .favorite_list .heading {
+    width: 100%;
+
+    & span {
+      display: block;
+      float: left;
+      border-left: 1px solid #000;
+    }
+
+    & .panel {
+      width: 20%;
+    }
+
+    & .category {
+      width: 30%;
+    }
+
+    & .types,
+    & .birthday {
+      width: 15%;
+    }
+
+    & .personality {
+      width: 20%;
+    }
+  }
+}
+
+/*----------------------------------------
+  ページネーション ここから
+----------------------------------------*/
+
+.pagination {
+  padding-top: 60px;
+}
+
+.pagination_list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .list_item {
+  margin-right: 5px;
+
+  & a {
+    display: block;
+    padding: 5px 10px;
+    background: #eee;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &.active a {
+    background: #666;
+    color: #fff;
+  }
+}
+
+/*----------------------------------------
+  フッター ここから
+----------------------------------------*/
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #ddd;
+
+  & p {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.5em;
+  }
+}
+
+/*----------------------------------------
+  フォーム ここから
+----------------------------------------*/
+
+// label {
+//   display: block;
+//   margin-top: 20px;
+// }
+
+.form {
+  width: 90%;
+  margin: 0 auto 20px;
+  padding: 30px;
+  border: 5px solid #ddd;
+  border-radius: 5px;
+
+  & .label_require {
+    margin-left: 5px;
+    background: #fe8a8b;
+    font-size: 14px;
+    padding: 3px 5px;
+    color: #fff;
+    vertical-align: bottom;
+  }
+}
+
+.page_login .form,
+.page_signup .form,
+.page_passRemind .form,
+.page_passRemindSend .form,
+.page_passRemaindRecieve .form {
+  width: 400px;
+}
+
+.page_passEdit .form,
+.page_withdraw .form {
+  padding: 30px 20%;
+}
+
+.page_profEdit {
+  & .prof_left {
+    width: 30%;
+  }
+
+  & .prof_right {
+    width: 60%;
+  }
+}
+
+.form {
+  & .area_drop {
+    width: 220px;
+    height: 220px;
+    background: #eee;
+    text-align: center;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  & .input_file {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  & .prev_img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  & .imgDrop_container {
+    width: 33.333%;
+    float: left;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  & .area_msg {
+    color: #ff4d4d;
+    padding-top: 4px;
+  }
+}
+
+// input {
+//   &[type="text"],
+//   &[type="password"],
+//   &[type="number"] {
+//     width: 100%;
+//     max-width: 350px;
+//     height: 50px;
+//     font-size: 16px;
+//     box-sizing: border-box;
+//     padding: 8px;
+//     border-radius: 5px;
+//     border: 1px solid #ccc;
+//     background: #eee;
+//     display: block;
+//   }
+// }
+
+.form select,
+textarea {
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #eee;
+  display: block;
+}
+
+input {
+  &[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+
+  &[type="number"] {
+    width: 100%;
+    text-align: left;
+  }
+
+  // &[type="submit"] {
+  //   font-size: 18px;
+  //   margin: 60px 0;
+  //   padding: 10px 20px;
+  //   width: 100%;
+  //   border-radius: 5px;
+  //   border: none;
+  //   background: #333;
+  //   color: #fff;
+  //   cursor: pointer;
+
+  //   &:hover {
+  //     background: #555;
+  //   }
+  // }
+}
+
+/*----------------------------------------
+  バリデーションチェック用
+----------------------------------------*/
+
+.check {
+  font-size: 0.8em;
+  margin-left: 10px;
+  color: #ff4d4d;
+}
+
+/*エラー時*/
+
+.has_error {
+  input,
+  textarea {
+    border: 2px solid #ff4d4d;
+  }
+}
+
+/*----------------------------------------
+  その他
+----------------------------------------*/
+
+.msg_slide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(122, 206, 230, 0.6);
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+}

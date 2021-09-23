@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>製品リスト | ポケモンカードゲーム検索(仮)</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="images/png" href="./img/site_icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./img/apple-touch-icon.png"
+    />
+  </head>
+  <body id="body" class="page_cardList">
+    <!--------ヘッダーメニュー部分-------->
+    <header class="l-header p-header">
+      <div class="container">
+        <div class="p-header__inner">
+          <div class="p-header__left">
+            <h1 class="p-header__title">
+              <a href="index.html">ポケモンカードゲーム検索(仮)</a>
+            </h1>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="p-header__menuTrigger js-toggleSpMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="p-header__right">
+            <!-- メニュー for SP -->
+            <div class="p-header__menu js-toggleSpMenuTarget">
+              <h2>メニュー</h2>
+              <ul>
+                <li class="p-header__list">
+                  <a href="index.html">トップページ</a>
+                </li>
+                <li class="p-header__list"><a href="#">カードリスト</a></li>
+                <li class="p-header__list">
+                  <a href="search.html">詳細カード検索</a>
+                </li>
+                <li class="p-header__list"><a href="#">ランキング</a></li>
+                <li class="p-header__list">
+                  <a href="#">お問合せフォーム</a>
+                </li>
+                <li class="p-header__list"><a href="#">リンク</a></li>
+                <li class="p-header__list"><a href="#">メニュー7</a></li>
+              </ul>
+            </div>
+
+            <!-- 検索フォーム for PC -->
+            <div class="p-searchArea">
+              <form action="#" method="get" class="p-searchArea__form">
+                <input
+                  type="text"
+                  placeholder="カード名で検索(ひらがな・よみがなOK)"
+                  class="c-input p−input"
+                />
+                <input type="submit" value="検索" class="c-btn p-btn" />
+              </form>
+            </div>
+
+            <!-- 
+          <ul>
+            <li><a href="guestlogin.php">ゲストログイン</a></li>
+            <li><a href="login.php">ログイン</a></li>
+            <li class="btn"><a href="signup.php">新規登録</a></li>
+          </ul>
+          --></div>
+        </div>
+      </div>
+    </header>
+    <p id="js_show_msg" style="display: none" class="msg_slide"></p>
+
+    <!--------メインコンテンツ部分-------->
+    <div class="contents container">
+      <div class="flexbox">
+        <!--------サイドバー部分(for PC)-------->
+        <div class="l-sidebar p-sidebar js-toggleSpMenuTarget">
+          <h2>メニュー</h2>
+          <ul class="p-sidebar__menu">
+            <li class="p-sidebar__list">
+              <a href="index.html">トップページ</a>
+            </li>
+            <li class="p-sidebar__list">
+              <a href="productList.html">カードリスト</a>
+            </li>
+            <li class="p-sidebar__list">
+              <a href="search.html">詳細カード検索</a>
+            </li>
+            <li class="p-sidebar__list"><a href="#">ランキング</a></li>
+            <li class="p-sidebar__list"><a href="#">お問合せフォーム</a></li>
+            <li class="p-sidebar__list"><a href="#">リンク</a></li>
+            <li class="p-sidebar__list"><a href="#">メニュー7</a></li>
+          </ul>
+        </div>
+        <!--------メインコンテンツ部分-------->
+        <div class="l-main p-main p-productList">
+          <div class="p-section">
+            <h2 class="p-section__title">カードリスト</h2>
+
+            <!-- 製品リスト_拡張パック部分 -->
+            <h3 class="p-section__subtitle">拡張パック</h3>
+            <div class="p-section__inner mb30">
+              <table class="p-table">
+                <thead>
+                  <tr class="p-table__hidden">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <th colspan="2">記号</th>
+                    <th>カードセット</th>
+                    <th>発売日</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>S8</td>
+                    <td>S8</td>
+                    <td><a href="cardList.html">フュージョンアーツ</a></td>
+                    <td>21/09/24</td>
+                  </tr>
+                  <tr>
+                    <td>S7D</td>
+                    <td>S7D</td>
+                    <td><a href="cardList.html">魔天パーフェクト</a></td>
+                    <td>21/07/09</td>
+                  </tr>
+                  <tr>
+                    <td>S7R</td>
+                    <td>S7R</td>
+                    <td><a href="cardList.html">蒼空ストリーム</a></td>
+                    <td>21/07/09</td>
+                  </tr>
+                  <tr>
+                    <td>S6a</td>
+                    <td>S6a</td>
+                    <td><a href="cardList.html">イーブイヒーローズ</a></td>
+                    <td>21/05/28</td>
+                  </tr>
+                  <tr>
+                    <td>S6H</td>
+                    <td>S6H</td>
+                    <td><a href="cardList.html">白銀のランス</a></td>
+                    <td>21/04/23</td>
+                  </tr>
+                  <tr>
+                    <td>S6K</td>
+                    <td>S6K</td>
+                    <td><a href="cardList.html">漆黒のガイスト</a></td>
+                    <td>21/04/23</td>
+                  </tr>
+                  <tr>
+                    <td>S5a</td>
+                    <td>S5a</td>
+                    <td><a href="cardList.html">双璧のファイター</a></td>
+                    <td>21/03/19</td>
+                  </tr>
+                  <tr>
+                    <td>S5I</td>
+                    <td>S5I</td>
+                    <td><a href="cardList.html">一撃マスター</a></td>
+                    <td>21/01/22</td>
+                  </tr>
+                  <tr>
+                    <td>S5R</td>
+                    <td>S5R</td>
+                    <td><a href="cardList.html">連撃マスター</a></td>
+                    <td>21/03/19</td>
+                  </tr>
+                  <tr>
+                    <td>S4a</td>
+                    <td>S4a</td>
+                    <td><a href="cardList.html">シャイニースターV</a></td>
+                    <td>20/11/20</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 製品リスト_コンセプトパック部分 -->
+            <h3 class="p-section__subtitle">コンセプトパック</h3>
+            <div class="p-section__inner mb30">
+              <table class="p-table">
+                <thead>
+                  <tr class="p-table__hidden">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <th colspan="2">記号</th>
+                    <th>カードセット</th>
+                    <th>発売日</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>S8</td>
+                    <td>S8</td>
+                    <td><a href="cardList.html">フュージョンアーツ</a></td>
+                    <td>21/09/24</td>
+                  </tr>
+                  <tr>
+                    <td>S7D</td>
+                    <td>S7D</td>
+                    <td><a href="cardList.html">魔天パーフェクト</a></td>
+                    <td>21/07/09</td>
+                  </tr>
+                  <tr>
+                    <td>S7R</td>
+                    <td>S7R</td>
+                    <td><a href="cardList.html">蒼空ストリーム</a></td>
+                    <td>21/07/09</td>
+                  </tr>
+                  <tr>
+                    <td>S6a</td>
+                    <td>S6a</td>
+                    <td><a href="cardList.html">イーブイヒーローズ</a></td>
+                    <td>21/05/28</td>
+                  </tr>
+                  <tr>
+                    <td>S6H</td>
+                    <td>S6H</td>
+                    <td><a href="cardList.html">白銀のランス</a></td>
+                    <td>21/04/23</td>
+                  </tr>
+                  <tr>
+                    <td>S6K</td>
+                    <td>S6K</td>
+                    <td><a href="cardList.html">漆黒のガイスト</a></td>
+                    <td>21/04/23</td>
+                  </tr>
+                  <tr>
+                    <td>S5a</td>
+                    <td>S5a</td>
+                    <td><a href="cardList.html">双璧のファイター</a></td>
+                    <td>21/03/19</td>
+                  </tr>
+                  <tr>
+                    <td>S5I</td>
+                    <td>S5I</td>
+                    <td><a href="cardList.html">一撃マスター</a></td>
+                    <td>21/01/22</td>
+                  </tr>
+                  <tr>
+                    <td>S5R</td>
+                    <td>S5R</td>
+                    <td><a href="cardList.html">連撃マスター</a></td>
+                    <td>21/03/19</td>
+                  </tr>
+                  <tr>
+                    <td>S4a</td>
+                    <td>S4a</td>
+                    <td><a href="cardList.html">シャイニースターV</a></td>
+                    <td>20/11/20</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 製品リスト_構築済みデッキ部分 -->
+            <!-- 製品リスト_その他部分 -->
+          </div>
+          <!-- 以下過去掲載物 -->
+          <!-- <div class="search_title">
+            <div class="search_left">
+              <span class="total_num">472</span>点のアイテムが見つかりました。
+            </div>
+            <div class="search_right">
+              <span class="num">1</span>
+              〜
+              <span class="num">20</span>
+              枚 /
+              <span class="num">472</span>
+              枚中
+            </div>
+          </div>
+          <div class="panel_list">
+            <ul>
+              <li>
+                <a href="cardDetail.php?c_no=001&p=1" class="panel">
+                  <div class="card_img">
+                    <img src="images/001.png" alt="" />
+                  </div>
+                  <div class="card_name">
+                    <img src="images/001_n.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="cardDetail.php?c_no=002&p=1" class="panel">
+                  <div class="card_img">
+                    <img src="images/002.png" alt="" />
+                  </div>
+                  <div class="card_name">
+                    <img src="images/002_n.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="cardDetail.php?c_no=003&p=1" class="panel">
+                  <div class="card_img">
+                    <img src="images/003.png" alt="" />
+                  </div>
+                  <div class="card_name">
+                    <img src="images/003_n.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="cardDetail.php?c_no=004&p=1" class="panel">
+                  <div class="card_img">
+                    <img src="images/004.png" alt="" />
+                  </div>
+                  <div class="card_name">
+                    <img src="images/004_n.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="cardDetail.php?c_no=005&p=1" class="panel">
+                  <div class="card_img">
+                    <img src="images/005.png" alt="" />
+                  </div>
+                  <div class="card_name">
+                    <img src="images/005_n.png" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!--------ページネーション部分-------->
+    <!-- <div class="pagination">
+      <div class="container">
+        <ul class="pagination_list">
+          <li class="list_item active">
+            <a href="?p=1&s_id=&t_id=&b_id=&p_id=">1</a>
+          </li>
+          <li class="list_item">
+            <a href="?p=2&s_id=&t_id=&b_id=&p_id=">2</a>
+          </li>
+          <li class="list_item">
+            <a href="?p=3&s_id=&t_id=&b_id=&p_id=">3</a>
+          </li>
+          <li class="list_item">
+            <a href="?p=4&s_id=&t_id=&b_id=&p_id=">4</a>
+          </li>
+          <li class="list_item">
+            <a href="?p=5&s_id=&t_id=&b_id=&p_id=">5</a>
+          </li>
+          <li class="list_item">
+            <a href="?p=24&s_id=&t_id=&b_id=&p_id=">&gt;</a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!--------フッター部分-------->
+    <footer id="footer mt30">
+      <p>©︎ 2021 ポケモンカードゲーム カード検索 All Rights Reserved.</p>
+    </footer>
+
+    <!--------scriptエリア-------->
+    <!--FontAwesome-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

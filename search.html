@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>詳細カード検索 | ポケモンカードゲーム検索(仮)</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="images/png" href="./img/site_icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./img/apple-touch-icon.png"
+    />
+  </head>
+  <body id="body" class="page_search">
+    <!--------ヘッダーメニュー部分-------->
+    <header class="l-header p-header">
+      <div class="container">
+        <div class="p-header__inner">
+          <div class="p-header__left">
+            <h1 class="p-header__title">
+              <a href="index.html">ポケモンカードゲーム検索(仮)</a>
+            </h1>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="p-header__menuTrigger js-toggleSpMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="p-header__right">
+            <!-- メニュー for SP -->
+            <div class="p-header__menu js-toggleSpMenuTarget">
+              <h2>メニュー</h2>
+              <ul>
+                <li class="p-header__list">
+                  <a href="index.html">トップページ</a>
+                </li>
+                <li class="p-header__list">
+                  <a href="productList.html">カードリスト</a>
+                </li>
+                <li class="p-header__list">
+                  <a href="search.html">詳細カード検索</a>
+                </li>
+                <li class="p-header__list"><a href="#">ランキング</a></li>
+                <li class="p-header__list">
+                  <a href="#">お問合せフォーム</a>
+                </li>
+                <li class="p-header__list"><a href="#">リンク</a></li>
+                <li class="p-header__list"><a href="#">メニュー7</a></li>
+              </ul>
+            </div>
+
+            <!-- 検索フォーム for PC -->
+            <div class="p-searchArea">
+              <form action="#" method="get" class="p-searchArea__form">
+                <input
+                  type="text"
+                  placeholder="カード名で検索(ひらがな・よみがなOK)"
+                  class="c-input p−input"
+                />
+                <input type="submit" value="検索" class="c-btn p-btn" />
+              </form>
+            </div>
+
+            <!-- 
+          <ul>
+            <li><a href="guestlogin.php">ゲストログイン</a></li>
+            <li><a href="login.php">ログイン</a></li>
+            <li class="btn"><a href="signup.php">新規登録</a></li>
+          </ul>
+          --></div>
+        </div>
+      </div>
+    </header>
+    <p id="js_show_msg" style="display: none" class="msg_slide"></p>
+
+    <!--------メインコンテンツ部分-------->
+    <div class="contents container">
+      <div class="flexbox">
+        <!--------サイドバー部分(for PC)-------->
+        <div class="l-sidebar p-sidebar js-toggleSpMenuTarget">
+          <h2>メニュー</h2>
+          <ul class="p-sidebar__menu">
+            <li class="p-sidebar__list">
+              <a href="index.html">トップページ</a>
+            </li>
+            <li class="p-sidebar__list">
+              <a href="productList.html">カードリスト</a>
+            </li>
+            <li class="p-sidebar__list">
+              <a href="search.html">詳細カード検索</a>
+            </li>
+            <li class="p-sidebar__list"><a href="#">ランキング</a></li>
+            <li class="p-sidebar__list"><a href="#">お問合せフォーム</a></li>
+            <li class="p-sidebar__list"><a href="#">リンク</a></li>
+            <li class="p-sidebar__list"><a href="#">メニュー7</a></li>
+          </ul>
+        </div>
+        <!--------メインコンテンツ部分-------->
+        <div class="l-main p-main p-search">
+          <!-- カードリスト部分 -->
+          <div class="p-section">
+            <h2 class="p-section__title">詳細カード検索</h2>
+
+            <div class="p-section__inner mb30">
+              <form action="" method="GET">
+                <ul class="p-search__menu">
+                  <li class="p-search__list"><label>収録パック</label></li>
+                  <!-- TODO:forで回してリスト生成 -->
+                  <li class="p-search__list">
+                    <label for="rarity" class="p-search__label"
+                      >レアリティ</label
+                    >
+                    <label for="rarity" class="p-extendBox__btn">
+                      <span id="js_value_target" class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="rarity"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="UR"/>UR</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="HR"/>HR</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="SR"/>SR</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="RRR" />RRR</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="RR" />RR</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="R" />R</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="U" />U</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="C" />C</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="-" />-</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="PROMO" />PROMO</label>
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="rarity" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label for="cardtype" class="p-search__label"
+                      >カード種類</label
+                    >
+                    <label for="cardtype" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="cardtype"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="ポケモン" />ポケモン</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="トレーナーズ" />トレーナーズ</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="エネルギー" />エネルギー</label>
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="cardtype" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label for="evolution" class="p-search__label">進化</label>
+                    <label for="evolution" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="evolution"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="たね" />たね</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="1進化" />1進化</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="2進化" />2進化</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="V" />V</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="VMAX" />VMAX</label>
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="evolution" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label for="type" class="p-search__label">タイプ</label>
+                    <label for="type" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="type"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="ノーマル" />ノーマル</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="草" />草</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="炎" />炎</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="水" />水</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="雷" />雷</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="超" />超</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="闘" />闘</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="鋼" />鋼</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="悪" />悪</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="フェアリー" />フェアリー</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="ドラゴン" />ドラゴン</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="サポーター" />サポーター</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="グッズ" />グッズ</label>
+                        </li>
+                        <li>
+                          <label
+                            ><input type="checkbox" class="js_tgl_check" data-value="ポケモンのどうぐ" />ポケモンのどうぐ</label
+                          >
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="type" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list"><label>HP</label></li>
+                  <li class="p-search__list">
+                    <label for="weak" class="p-search__label">弱点</label>
+                    <label for="weak" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="weak"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />なし</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />ノーマル</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />草</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />炎</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />水</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />雷</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />超</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />闘</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />鋼</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />悪</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />フェアリー</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />ドラゴン</label>
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="weak" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label for="regist" class="p-search__label">抵抗力</label>
+                    <label for="regist" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="regist"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />なし</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />ノーマル</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />草</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />炎</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />水</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />雷</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />超</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />闘</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />鋼</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />悪</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />フェアリー</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />ドラゴン</label>
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="regist" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label for="escape" class="p-search__label">にげる</label>
+                    <label for="escape" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="escape"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li style="width: 100%">
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />なし</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×1</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×2</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×3</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×4</label>
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="escape" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label for="ability" class="p-search__label">特性</label>
+                    <label for="ability" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="ability"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li style="width: 100%">
+                          <label
+                            ><input
+                              type="radio"
+                              name="ability"
+                              checked="checked"
+                            />こだわらない</label
+                          >
+                        </li>
+                        <li>
+                          <label
+                            ><input type="radio" name="ability" />あり</label
+                          >
+                        </li>
+                        <li>
+                          <label
+                            ><input type="radio" name="ability" />なし</label
+                          >
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="ability" class="p-extendBox__selectBtn">選択</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label for="skill" class="p-search__label">ワザ</label>
+                    <label for="skill" class="p-extendBox__btn">
+                      <span class="value js_value_target">選択なし</span>
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="skill"
+                      class="p-extendBox__checkBox rarity"
+                      style="display: none"
+                    />
+                    <div class="p-extendBox">
+                      <ul>
+                        <li style="width: 100%">
+                          <label
+                            ><input type="checkbox" name="skill" />0個</label
+                          >
+                        </li>
+                        <li>
+                          <label
+                            ><input type="checkbox" name="skill" />1個</label
+                          >
+                        </li>
+                        <li>
+                          <label
+                            ><input type="checkbox" name="skill" />2個</label
+                          >
+                        </li>
+                        <li>
+                          <label
+                            ><input type="checkbox" name="skill" />3個</label
+                          >
+                        </li>
+                        <li>
+                          <label
+                            ><input type="checkbox" name="skill" />4個</label
+                          >
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="skill" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js_check_all">すべて選択</span>
+                          <span class="js_clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-search__list">
+                    <label>ワザに使うエネルギー種類</label>
+                  </li>
+                  <li class="p-search__list">
+                    <label
+                      >ワザに使うエネルギー個数(指定方法は考える必要あり)</label
+                    >
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------フッター部分-------->
+    <footer id="footer" class="mt30">
+      <p>©︎ 2021 ポケモンカードゲーム カード検索 All Rights Reserved.</p>
+    </footer>
+
+    <!--------scriptエリア-------->
+    <!--FontAwesome-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

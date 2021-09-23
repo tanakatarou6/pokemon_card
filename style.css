@@ -167,7 +167,7 @@ header li.btn {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .main {

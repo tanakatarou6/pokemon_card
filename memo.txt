@@ -1,3 +1,8 @@
+package.jsonのアップデート
+npm-check-updates
+$ ncu
+$ ncu -u
+
 サイドメニュー出したときにhiddnegが効かない
 
 検索結果の上にアコーディオンで検索条件を出す(SP)
@@ -24,8 +29,3 @@
 position:relative+absoluteで。
 
 モーダル外をクリックしたときに、モーダルを閉じる
-
-他の箇所のボタン操作時にDOMを指定
-┗「すべて選択」「選択を解除」の参照labelを修正
-
-tggleCheckBox関数の調整から

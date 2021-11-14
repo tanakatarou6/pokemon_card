@@ -884,20 +884,38 @@ label.err > input {
 .p-extendBox {
   position: absolute;
   width: 60%;
-  min-width: 550px;
-  background-color: #fff;
   border-radius: 5px;
-  margin: 5px 0;
   z-index: 5;
   box-shadow: 0 0 8px gray;
 
-  max-height: 0;
-  overflow-y: hidden;
-  transition: all 0.3s;
+  display: none; // 暫定
 
   @include mq() {
     width: 100%;
-    min-width: auto;
+  }
+
+  &__bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &__inner {
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 0;
+    border-radius: 5px;
+    z-index: 5;
+
+    @include mq() {
+      min-width: auto;
+    }
+  }
+
+  &__block {
+    width: 60%;
   }
 
   &__btn {
@@ -905,7 +923,7 @@ label.err > input {
     width: 400px;
     border: 1px solid #999;
     border-radius: 5px;
-    padding: 0 5px;
+    padding: 0 10px;
     cursor: pointer;
     position: relative;
     white-space: nowrap;
@@ -926,11 +944,26 @@ label.err > input {
   }
 
   &__checkBox {
-    &:checked + .p-extendBox {
+    &:checked ~ .p-extendBox {
       max-height: 250px;
       visibility: visible;
       transition: all 0.3s;
+      display: block;
     }
+
+    &:checked ~ .p-extendBox > .p-extendBox__ounter {
+      background-color: #000;
+    }
+  }
+
+  &__outer {
+    // background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   &__controller {
@@ -941,7 +974,7 @@ label.err > input {
     vertical-align: middle;
 
     @include mq() {
-      margin: 10px 0;
+      margin: 10px;
     }
 
     & div {
@@ -1530,4 +1563,32 @@ input {
   text-align: center;
   font-size: 16px;
   line-height: 40px;
+}
+
+// test
+.content {
+  margin: 0 auto;
+  padding: 40px;
+}
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content {
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
 }

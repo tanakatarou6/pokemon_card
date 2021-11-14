@@ -84,7 +84,7 @@
         </div>
       </div>
     </header>
-    <p id="js_show_msg" style="display: none" class="msg_slide"></p>
+    <p id="js-show_msg" style="display: none" class="msg_slide"></p>
 
     <!--------メインコンテンツ部分-------->
     <div class="contents container">
@@ -113,73 +113,68 @@
           <!-- カードリスト部分 -->
           <div class="p-section">
             <h2 class="p-section__title">詳細カード検索</h2>
-
             <div class="p-section__inner mb30">
               <form action="" method="GET">
                 <ul class="p-search__menu">
-                  <li class="p-search__list"><label>収録パック</label></li>
-                  <!-- TODO:forで回してリスト生成 -->
                   <li class="p-search__list">
-                    <label for="rarity" class="p-search__label"
-                      >レアリティ</label
-                    >
+                    <label>収録パック</label>
+                    <!-- TODO:forで回してリスト生成 -->
+                  </li>
+                  <li class="p-search__list">
+                    <label for="rarity" class="p-search__label">レアリティ</label>
                     <label for="rarity" class="p-extendBox__btn">
-                      <span id="js_value_target" class="value js_value_target">選択なし</span>
+                      <span id="js-value_target" class="value js-value_target">選択なし</span>
                     </label>
-                    <input
-                      type="checkbox"
-                      id="rarity"
-                      class="p-extendBox__checkBox rarity"
-                      style="display: none"
-                    />
+                    <input type="checkbox" id="rarity" class="p-extendBox__checkBox rarity" style="display: none">
                     <div class="p-extendBox">
-                      <ul>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="UR"/>UR</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="HR"/>HR</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="SR"/>SR</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="RRR" />RRR</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="RR" />RR</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="R" />R</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="U" />U</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="C" />C</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="-" />-</label>
-                        </li>
-                        <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="PROMO" />PROMO</label>
-                        </li>
-                      </ul>
-                      <div class="p-extendBox__controller">
-                        <label for="rarity" class="p-extendBox__selectBtn">選択</label>
-                        <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                      <label for="rarity" class="p-extendBox__outer"></label>
+                      <div class="p-extendBox__inner">
+                        <ul>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="UR"/>UR</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="HR"/>HR</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="SR"/>SR</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="RRR" />RRR</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="RR" />RR</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="R" />R</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="U" />U</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="C" />C</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="-" />-</label>
+                          </li>
+                          <li>
+                            <label><input type="checkbox" class="js-tgl_check" data-value="PROMO" />PROMO</label>
+                          </li>
+                        </ul>
+                        <div class="p-extendBox__controller">
+                          <label for="rarity" class="p-extendBox__selectBtn">選択</label>
+                          <div>
+                            <span class="js-check_all">すべて選択</span>
+                            <span class="js-clear_all">選択を解除</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li class="p-search__list">
-                    <label for="cardtype" class="p-search__label"
-                      >カード種類</label
-                    >
+                    <label for="cardtype" class="p-search__label">カード種類</label>
                     <label for="cardtype" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -190,20 +185,20 @@
                     <div class="p-extendBox">
                       <ul>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="ポケモン" />ポケモン</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="ポケモン" />ポケモン</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="トレーナーズ" />トレーナーズ</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="トレーナーズ" />トレーナーズ</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="エネルギー" />エネルギー</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="エネルギー" />エネルギー</label>
                         </li>
                       </ul>
                       <div class="p-extendBox__controller">
                         <label for="cardtype" class="p-extendBox__selectBtn">選択</label>
                         <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
                         </div>
                       </div>
                     </div>
@@ -211,7 +206,7 @@
                   <li class="p-search__list">
                     <label for="evolution" class="p-search__label">進化</label>
                     <label for="evolution" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -222,26 +217,26 @@
                     <div class="p-extendBox">
                       <ul>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="たね" />たね</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="たね" />たね</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="1進化" />1進化</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="1進化" />1進化</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="2進化" />2進化</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="2進化" />2進化</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="V" />V</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="V" />V</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="VMAX" />VMAX</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="VMAX" />VMAX</label>
                         </li>
                       </ul>
                       <div class="p-extendBox__controller">
                         <label for="evolution" class="p-extendBox__selectBtn">選択</label>
                         <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
                         </div>
                       </div>
                     </div>
@@ -249,7 +244,7 @@
                   <li class="p-search__list">
                     <label for="type" class="p-search__label">タイプ</label>
                     <label for="type" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -260,55 +255,55 @@
                     <div class="p-extendBox">
                       <ul>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="ノーマル" />ノーマル</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="ノーマル" />ノーマル</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="草" />草</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="草" />草</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="炎" />炎</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="炎" />炎</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="水" />水</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="水" />水</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="雷" />雷</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="雷" />雷</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="超" />超</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="超" />超</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="闘" />闘</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="闘" />闘</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="鋼" />鋼</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="鋼" />鋼</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="悪" />悪</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="悪" />悪</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="フェアリー" />フェアリー</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="フェアリー" />フェアリー</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="ドラゴン" />ドラゴン</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="ドラゴン" />ドラゴン</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="サポーター" />サポーター</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="サポーター" />サポーター</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="グッズ" />グッズ</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="グッズ" />グッズ</label>
                         </li>
                         <li>
                           <label
-                            ><input type="checkbox" class="js_tgl_check" data-value="ポケモンのどうぐ" />ポケモンのどうぐ</label
+                            ><input type="checkbox" class="js-tgl_check" data-value="ポケモンのどうぐ" />ポケモンのどうぐ</label
                           >
                         </li>
                       </ul>
                       <div class="p-extendBox__controller">
                         <label for="type" class="p-extendBox__selectBtn">選択</label>
                         <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
                         </div>
                       </div>
                     </div>
@@ -317,7 +312,7 @@
                   <li class="p-search__list">
                     <label for="weak" class="p-search__label">弱点</label>
                     <label for="weak" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -328,47 +323,47 @@
                     <div class="p-extendBox">
                       <ul>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="なし" />なし</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="なし" />なし</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="ノーマル" />ノーマル</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="ノーマル" />ノーマル</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="草" />草</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="草" />草</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="炎" />炎</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="炎" />炎</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="水" />水</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="水" />水</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="雷" />雷</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="雷" />雷</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="超" />超</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="超" />超</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="闘" />闘</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="闘" />闘</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="鋼" />鋼</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="鋼" />鋼</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="悪" />悪</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="悪" />悪</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="フェアリー" />フェアリー</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="フェアリー" />フェアリー</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="ドラゴン" />ドラゴン</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="ドラゴン" />ドラゴン</label>
                         </li>
                       </ul>
                       <div class="p-extendBox__controller">
                         <label for="weak" class="p-extendBox__selectBtn">選択</label>
                         <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
                         </div>
                       </div>
                     </div>
@@ -376,7 +371,7 @@
                   <li class="p-search__list">
                     <label for="regist" class="p-search__label">抵抗力</label>
                     <label for="regist" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -387,47 +382,47 @@
                     <div class="p-extendBox">
                       <ul>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />なし</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="なし" />なし</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />ノーマル</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="ノーマル" />ノーマル</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />草</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="草" />草</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />炎</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="炎" />炎</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />水</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="水" />水</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />雷</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="雷" />雷</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />超</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="超" />超</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />闘</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="闘" />闘</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />鋼</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="鋼" />鋼</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />悪</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="悪" />悪</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />フェアリー</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="フェアリー" />フェアリー</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />ドラゴン</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="ドラゴン" />ドラゴン</label>
                         </li>
                       </ul>
                       <div class="p-extendBox__controller">
                         <label for="regist" class="p-extendBox__selectBtn">選択</label>
                         <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
                         </div>
                       </div>
                     </div>
@@ -435,7 +430,7 @@
                   <li class="p-search__list">
                     <label for="escape" class="p-search__label">にげる</label>
                     <label for="escape" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -446,26 +441,26 @@
                     <div class="p-extendBox">
                       <ul>
                         <li style="width: 100%">
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />なし</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="" />なし</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×1</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="" />無×1</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×2</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="" />無×2</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×3</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="" />無×3</label>
                         </li>
                         <li>
-                          <label><input type="checkbox" class="js_tgl_check" data-value="" />無×4</label>
+                          <label><input type="checkbox" class="js-tgl_check" data-value="" />無×4</label>
                         </li>
                       </ul>
                       <div class="p-extendBox__controller">
                         <label for="escape" class="p-extendBox__selectBtn">選択</label>
                         <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
                         </div>
                       </div>
                     </div>
@@ -473,7 +468,7 @@
                   <li class="p-search__list">
                     <label for="ability" class="p-search__label">特性</label>
                     <label for="ability" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -511,7 +506,7 @@
                   <li class="p-search__list">
                     <label for="skill" class="p-search__label">ワザ</label>
                     <label for="skill" class="p-extendBox__btn">
-                      <span class="value js_value_target">選択なし</span>
+                      <span class="value js-value_target">選択なし</span>
                     </label>
                     <input
                       type="checkbox"
@@ -522,42 +517,90 @@
                     <div class="p-extendBox">
                       <ul>
                         <li style="width: 100%">
-                          <label
-                            ><input type="checkbox" name="skill" />0個</label
-                          >
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>0個</label>
                         </li>
                         <li>
-                          <label
-                            ><input type="checkbox" name="skill" />1個</label
-                          >
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>1個</label>
                         </li>
                         <li>
-                          <label
-                            ><input type="checkbox" name="skill" />2個</label
-                          >
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>2個</label>
                         </li>
                         <li>
-                          <label
-                            ><input type="checkbox" name="skill" />3個</label
-                          >
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>3個</label>
                         </li>
                         <li>
-                          <label
-                            ><input type="checkbox" name="skill" />4個</label
-                          >
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>4個</label>
                         </li>
                       </ul>
                       <div class="p-extendBox__controller">
                         <label for="skill" class="p-extendBox__selectBtn">選択</label>
                         <div>
-                          <span class="js_check_all">すべて選択</span>
-                          <span class="js_clear_all">選択を解除</span>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li class="p-search__list">
                     <label>ワザに使うエネルギー種類</label>
+                    <div class="p-extendBox__block">
+                      <ul>
+                        <li>
+                          <label>
+                            <select>
+                              <option value="0">ノーマル</option>
+                              <option value="1">草</option>
+                              <option value="2">炎</option>
+                              <option value="3">水</option>
+                              <option value="4">雷</option>
+                              <option value="5">超</option>
+                              <option value="6">闘</option>
+                              <option value="7">鋼</option>
+                              <option value="8">悪</option>
+                              <option value="9">フェアリー</option>
+                              <option value="10">ドラゴン</option>
+                            </select>
+                            <select>
+                              <option value="0">0個</option>
+                              <option value="1">1個</option>
+                              <option value="2">2個</option>
+                              <option value="3">3個</option>
+                              <option value="4">4個</option>
+                              <option value="5">5個</option>
+                              <option value="6">6個</option>
+                              <option value="7">7個</option>
+                              <option value="8">8個</option>
+                              <option value="9">9個</option>
+                            </select>
+                            <select>
+                              <option value="0">未満</option>
+                              <option value="1">ちょうど</option>
+                              <option value="2">以上</option>
+                            </select>
+                          </label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>1個</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>2個</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>3個</label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox" class="js-tgl_check" data-value=""/>4個</label>
+                        </li>
+                      </ul>
+                      <div class="p-extendBox__controller">
+                        <label for="skill" class="p-extendBox__selectBtn">選択</label>
+                        <div>
+                          <span class="js-check_all">すべて選択</span>
+                          <span class="js-clear_all">選択を解除</span>
+                        </div>
+                      </div>
+                    </div>
+
                   </li>
                   <li class="p-search__list">
                     <label

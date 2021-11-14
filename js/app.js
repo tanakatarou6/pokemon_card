@@ -92,20 +92,20 @@ for (let i = 0; i < spMenuClose.length; i++) {
 // 検索ページ用JS
 // ==============================
 // コピーボタンのDOM取得
-const btn_copy_text = document.querySelector("#js_txt_copy");
-const btn_copy_clip = document.querySelector("#js_cb_copy");
-// const btn_clear_all = document.querySelector("#js_cb_clear");
-const btn_select_all = document.querySelector("#js_cb_all");
+const btn_copy_text = document.querySelector("#js-txt_copy");
+const btn_copy_clip = document.querySelector("#js-cb_copy");
+// const btn_clear_all = document.querySelector("#js-cb_clear");
+const btn_select_all = document.querySelector("#js-cb_all");
 
-// const $btn_add_name = document.getElementsByClassName("js_add_name");
-// const $btn_del_name = document.getElementsByClassName("js_del_name");
-const btn_tgl_check = document.getElementsByClassName("js_tgl_check");
-const btn_check_all = document.getElementsByClassName("js_check_all");
-const btn_clear_all = document.getElementsByClassName("js_clear_all");
+// const $btn_add_name = document.getElementsByClassName("js-add_name");
+// const $btn_del_name = document.getElementsByClassName("js-del_name");
+const btn_tgl_check = document.getElementsByClassName("js-tgl_check");
+const btn_check_all = document.getElementsByClassName("js-check_all");
+const btn_clear_all = document.getElementsByClassName("js-clear_all");
 
 // コピー対象のDOMやvalue
-const copy_text_target = document.querySelector("#js_txt_target");
-const search_value = document.querySelector("#js_value_target");
+const copy_text_target = document.querySelector("#js-txt_target");
+const search_value = document.querySelector("#js-value_target");
 
 // 「下のテキストエリアにコピーします」を押したとき
 // btn_copy_text.addEventListener("click", function () {
@@ -137,7 +137,7 @@ for (let i = 0; i < btn_tgl_check.length; i++) {
   btn_tgl_check[i].addEventListener("change", function () {
     // クリックされたチェックボックスの上のlabelタグの要素を取得
     let labelElem =
-      this.closest(".p-search__list").querySelector(".js_value_target");
+      this.closest(".p-search__list").querySelector(".js-value_target");
     toggleCheckbox(this);
     console.log("selectBox:" + labelElem.innerHTML);
   });
@@ -148,17 +148,17 @@ for (let i = 0; i < btn_check_all.length; i++) {
   btn_check_all[i].addEventListener("click", function () {
     // ▼すべて選択からみた相対指定でのlabel要素
     labelElem =
-      this.closest(".p-search__list").querySelector(".js_value_target");
+      this.closest(".p-search__list").querySelector(".js-value_target");
     console.log(labelElem);
-    labelElem.innerHTML = "";
+    labelElem.innerHTML = " ";
     // ▼すべて選択から見た相対指定での各チェックボックス
     checkBox =
-      this.closest(".p-search__list").getElementsByClassName("js_tgl_check");
+      this.closest(".p-search__list").getElementsByClassName("js-tgl_check");
     console.log(checkBox);
     for (let i = 0; i < checkBox.length; i++) {
       // 1.すべてのチェックボックスにチェックを入れる
       checkBox[i].checked = true;
-      // 2.各data属性をjs_value_targetに入れる
+      // 2.各data属性をjs-value_targetに入れる
       addName(checkBox[i], labelElem);
     }
     // 末尾にあったら「/ 」を削除
@@ -173,18 +173,18 @@ for (let i = 0; i < btn_clear_all.length; i++) {
   btn_clear_all[i].addEventListener("click", function () {
     // ▼「選択を解除」からみた相対指定でのlabel要素
     labelElem =
-      this.closest(".p-search__list").querySelector(".js_value_target");
+      this.closest(".p-search__list").querySelector(".js-value_target");
     console.log(labelElem);
     labelElem.innerHTML = "";
     // ▼「選択を解除」から見た相対指定での各チェックボックス
     checkBox =
-      this.closest(".p-search__list").getElementsByClassName("js_tgl_check");
+      this.closest(".p-search__list").getElementsByClassName("js-tgl_check");
     console.log(checkBox);
     for (let i = 0; i < checkBox.length; i++) {
       // 1.すべてのチェックボックスのチェックを外す
       checkBox[i].checked = false;
     }
-    // js_value_targetを「選択なし」で上書き
+    // js-value_targetを「選択なし」で上書き
     labelElem.innerHTML = "選択なし";
   });
 }
@@ -230,7 +230,7 @@ const addName = function (checkbox, labelElem) {
 const delValue = function (target, str, label) {
   console.log("削除文字列：" + str);
   console.log(
-    target.closest(".p-search__list").querySelector(".js_value_target")
+    target.closest(".p-search__list").querySelector(".js-value_target")
   );
   // label
   console.log(label);
@@ -254,9 +254,9 @@ const delValue = function (target, str, label) {
   // 削除処理をした文字列をテキストエリアに出力
   target
     .closest(".p-search__list")
-    .querySelector(".js_value_target").innerHTML = label;
+    .querySelector(".js-value_target").innerHTML = label;
   console.log(
-    target.closest(".p-search__list").querySelector(".js_value_target")
+    target.closest(".p-search__list").querySelector(".js-value_target")
   );
 };
 
@@ -271,7 +271,7 @@ const toggleCheckbox = function (target) {
   // labelの文字列を取得
   let label = target
     .closest(".p-search__list")
-    .querySelector(".js_value_target").innerHTML;
+    .querySelector(".js-value_target").innerHTML;
   // labelにチェックしたinputのdataと同じものがあるかチェック
   console.log("検索条件：" + value);
   // 実際の処理
@@ -292,6 +292,50 @@ const toggleCheckbox = function (target) {
     // addType(target);
     target
       .closest(".p-search__list")
-      .querySelector(".js_value_target").innerHTML = label;
+      .querySelector(".js-value_target").innerHTML = label;
   }
 };
+
+//------------------------------
+// モーダル外クリック時のイベント
+//------------------------------
+// document.addEventListener("click", (e) => {
+//   if (!e.target.closest(".p-extendBox")) {
+//     //ここに外側をクリックしたときの処理
+//     if (1) {
+//       console.log(this);
+//       console.log("外側クリックされたよ");
+//     }
+//   } else {
+//     //ここに内側をクリックしたときの処理
+//     console.log("いえーい、みてるー？");
+//   }
+// });
+
+// test
+var modalOpen = document.getElementsByClassName("js-modal-open");
+var modalClose = document.getElementsByClassName("js-modal-close");
+for (var i = 0; i < modalOpen.length; i++) {
+  modalOpen[i].addEventListener("click", function () {
+    // クリック要素のdata属性値を取得
+    let target = this.dataset.target;
+    console.log("target:" + target);
+    return false;
+  });
+}
+
+// $(function () {
+//   $(".js-modal-open").each(function () {
+//     $(this).on("click", function () {
+//       var target = $(this).data("target");
+//       var modal = document.getElementById(target);
+//       $(modal).fadeIn();
+//       return false;
+//     });
+//   });
+//   $(".js-modal-close").on("click", function () {
+//     $(".js-modal").fadeOut();
+//     return false;
+//   });
+// });
+// test

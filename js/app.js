@@ -105,7 +105,7 @@ const btn_clear_all = document.getElementsByClassName("js-clear_all");
 
 // コピー対象のDOMやvalue
 const copy_text_target = document.querySelector("#js-txt_target");
-const search_value = document.querySelector("#js-value_target");
+// const search_value = document.querySelector("#js-value_target");
 
 // 「下のテキストエリアにコピーします」を押したとき
 // btn_copy_text.addEventListener("click", function () {

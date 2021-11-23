@@ -125,7 +125,7 @@
                     <label for="rarity" class="p-extendBox__btn">
                       <span id="js-value_target" class="value js-value_target">選択なし</span>
                     </label>
-                    <input type="checkbox" id="rarity" class="p-extendBox__checkBox rarity" style="display: none">
+                    <input type="checkbox" id="rarity" class="p-extendBox__checkBox" style="display: none">
                     <div class="p-extendBox">
                       <label for="rarity" class="p-extendBox__outer"></label>
                       <div class="p-extendBox__inner">
@@ -176,14 +176,11 @@
                     <label for="cardtype" class="p-extendBox__btn">
                       <span class="value js-value_target">選択なし</span>
                     </label>
-                    <input
-                      type="checkbox"
-                      id="cardtype"
-                      class="p-extendBox__checkBox rarity"
-                      style="display: none"
-                    />
+                    <input type="checkbox" id="cardtype" class="p-extendBox__checkBox" style="display: none"/>
                     <div class="p-extendBox">
-                      <ul>
+                      <label for="cardtype" class="p-extendBox__outer"></label>
+                      <div class="p-extendBox__inner">
+                        <ul>
                         <li>
                           <label><input type="checkbox" class="js-tgl_check" data-value="ポケモン" />ポケモン</label>
                         </li>
@@ -202,6 +199,7 @@
                         </div>
                       </div>
                     </div>
+                  </div>
                   </li>
                   <li class="p-search__list">
                     <label for="evolution" class="p-search__label">進化</label>
